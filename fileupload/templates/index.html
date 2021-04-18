@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>file upload demo</title>
+    <!-- Empty favicon so browser doesn't make a request to /favicon.ico on the server. -->
+    <!-- Courtesy of https://stackoverflow.com/questions/1321878/ -->
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  </head>
+  <body>
+    <input id="file-input" type="file" multiple>
+    <button id="upload-button">Upload one or more files.</button>
+    <ul id="requests"></ul>
+  </body>
+  <script src="{{ url_for('static', filename='fileupload.js') }}"></script>
+</html>

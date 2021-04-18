@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 60rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.2rem;
+}
+
+#upload-button {
+  cursor: pointer;
+  background: #0074d9;
+  color: white;
+  border: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#upload-button:hover {
+  box-shadow: inset 0 0 0 99em rgb(255 255 255 / 20%);
+}
+
+#file-input {
+  /* Hide the default file input widget as we are using a custom button. */
+  display: none;
+}
+
+#requests {
+  width: 100%;
+  margin-top: 1.5rem;
+  /* Hide the list markers. */
+  list-style: none;
+  text-align: left;
+}
+
+#requests li {
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+
+#requests li + li {
+  margin-top: 0.5rem;
+}
+
+#requests li .file-name {
+  display: inline-block;
+  width: 80%;
+  padding-right: 0.5rem;
+}
+
+#requests li progress {
+  width: 20%;
+}
+
+#requests li .message {
+  font-weight: bold;
+}
+
+#requests li .message.finished {
+  color: green;
+}
+
+#requests li .message.failed {
+  color: red;
+}
+
+#requests li .timestamp {
+  font-size: 0.8rem;
+  opacity: 50%;
+}
