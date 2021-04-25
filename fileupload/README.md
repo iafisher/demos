@@ -20,3 +20,5 @@ python3 server.py
 ```
 
 Then, visit http://localhost:5000 in your browser of choice to view the demo.
+
+Note that even large uploads are likely to be very quick when the server is running locally, so you may wish to open up Chrome's developer tools and artifically throttle the connection under the "Network" tab so that you can see the progress bar updating.
