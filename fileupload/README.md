@@ -1,7 +1,6 @@
 A demo for uploading files from the web with a progress bar using JavaScript.
 
-![Screenshot of demo](/fileupload/gh_images/screenshot1.png)
-![Screenshot of demo](/fileupload/gh_images/screenshot2.png)
+![Screenshot of demo](/fileupload/gh_images/screenshot.png)
 
 Try it yourself:
 
