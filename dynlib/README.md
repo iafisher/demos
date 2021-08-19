@@ -1,5 +1,14 @@
 A minimal example of loading a shared library at runtime on Linux. The code to load the library is in `main.c`, and the library code itself is in `return_42.c`.
 
+You can also easily load the library in Python:
+
+```python
+import ctypes
+
+lib = ctypes.cdll.LoadLibrary("./libreturn42.so")
+print(lib.return42())
+```
+
 This technique may be useful if:
 
 - Your application needs to load compiled plugins at runtime.
