@@ -9,6 +9,33 @@ lib = ctypes.cdll.LoadLibrary("./libreturn42.so")
 print(lib.return42())
 ```
 
+With a bit more effort, the library can be used in Go, too:
+
+```go
+package main
+
+/*
+#cgo LFLAGS: -ldl
+#include <dlfcn.h>
+
+typedef int (*f_type)();
+
+int return42_wrapper(void *f) {
+	return ((f_type)f)();
+}
+*/
+import "C"
+
+import "fmt"
+
+func main() {
+	handle := C.dlopen(C.CString("libreturn42.so"), C.RTLD_LAZY)
+	return42_ptr := C.dlsym(handle, C.CString("return42"))
+	result := C.return42_wrapper(return42_ptr)
+	fmt.Println(result)
+}
+```
+
 This technique may be useful if:
 
 - Your application needs to load compiled plugins at runtime.
