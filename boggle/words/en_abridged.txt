@@ -1275,7 +1275,6 @@ alarmist
 alarmists
 alarms
 alas
-alb
 albacore
 albacores
 albatross
@@ -2587,7 +2586,6 @@ area
 areas
 arena
 arenas
-ares
 argon
 argosies
 argosy
@@ -3527,10 +3525,6 @@ azimuth
 azimuths
 azure
 azures
-baa
-baaed
-baaing
-baas
 babble
 babbled
 babbler
@@ -6616,7 +6610,6 @@ browser
 browsers
 browses
 browsing
-brr
 bruin
 bruins
 bruise
@@ -8898,15 +8891,12 @@ chewiest
 chewing
 chews
 chewy
-chi
 chiaroscuro
 chic
 chicaneries
 chicanery
 chicer
 chicest
-chichi
-chichis
 chick
 chickadee
 chickadees
@@ -12960,7 +12950,6 @@ crystallizing
 crystallographic
 crystallography
 crystals
-cs
 cub
 cubbyhole
 cubbyholes
@@ -16638,7 +16627,6 @@ dormouse
 dorms
 dorsal
 dory
-dos
 dosage
 dosages
 dose
@@ -17159,7 +17147,6 @@ duffers
 dug
 dugout
 dugouts
-duh
 duke
 dukedom
 dukedoms
@@ -18918,7 +18905,6 @@ eruptions
 erupts
 erythrocyte
 erythrocytes
-es
 escalate
 escalated
 escalates
@@ -20381,7 +20367,6 @@ federation
 federations
 fedora
 fedoras
-feds
 fee
 feeble
 feebleness
@@ -20628,7 +20613,6 @@ fidgets
 fidgety
 fiduciaries
 fiduciary
-fie
 fief
 fiefs
 field
@@ -22384,7 +22368,6 @@ frizzled
 frizzles
 frizzling
 frizzy
-fro
 frock
 frocks
 frog
@@ -24526,7 +24509,6 @@ grunting
 grunts
 gryphon
 gryphons
-gs
 guacamole
 guano
 guarantee
@@ -24835,7 +24817,6 @@ hagglers
 haggles
 haggling
 hags
-hah
 haiku
 hail
 hailed
@@ -25725,7 +25706,6 @@ henpecked
 henpecking
 henpecks
 hens
-hep
 hepatic
 hepatitis
 hepper
@@ -25884,7 +25864,6 @@ hide
 hideaway
 hideaways
 hidebound
-hided
 hideous
 hideously
 hideousness
@@ -25892,16 +25871,12 @@ hideout
 hideouts
 hides
 hiding
-hie
-hied
-hieing
 hierarchical
 hierarchically
 hierarchies
 hierarchy
 hieroglyphic
 hieroglyphics
-hies
 hifalutin
 high
 highball
@@ -26490,7 +26465,6 @@ horticultural
 horticulture
 horticulturist
 horticulturists
-hos
 hosanna
 hosannas
 hose
@@ -26680,7 +26654,6 @@ hugest
 hugged
 hugging
 hugs
-huh
 hula
 hulas
 hulk
@@ -28164,12 +28137,6 @@ indomitable
 indomitably
 indoor
 indoors
-indorse
-indorsed
-indorsement
-indorsements
-indorses
-indorsing
 indubitable
 indubitably
 induce
@@ -29628,8 +29595,6 @@ isle
 isles
 islet
 islets
-ism
-isms
 isobar
 isobars
 isolate
@@ -30690,11 +30655,7 @@ kowtow
 kowtowed
 kowtowing
 kowtows
-krone
-kroner
-kronor
 krypton
-ks
 kudos
 kudzu
 kudzus
@@ -32441,7 +32402,6 @@ loyalties
 loyalty
 lozenge
 lozenges
-ls
 luau
 luaus
 lubber
@@ -34084,7 +34044,6 @@ mewls
 mews
 mezzanine
 mezzanines
-mi
 miaow
 miaowed
 miaowing
@@ -35519,8 +35478,6 @@ mowing
 mown
 mows
 mozzarella
-ms
-mu
 much
 mucilage
 muck
@@ -36501,9 +36458,6 @@ nippy
 nips
 nirvana
 nit
-nite
-niter
-nites
 nitpick
 nitpicked
 nitpicker
@@ -36554,9 +36508,6 @@ nods
 nodular
 nodule
 nodules
-noel
-noels
-noes
 noggin
 noggins
 noise
@@ -36591,7 +36542,6 @@ nominative
 nominatives
 nominee
 nominees
-non
 nonabrasive
 nonabsorbent
 nonabsorbents
@@ -36879,14 +36829,10 @@ novitiate
 novitiates
 now
 nowadays
-noway
 nowhere
-nowise
 noxious
 nozzle
 nozzles
-nth
-nu
 nuance
 nuanced
 nuances
@@ -40399,19 +40345,15 @@ physiotherapists
 physiotherapy
 physique
 physiques
-pi
 pianissimi
 pianissimo
 pianissimos
 pianist
 pianists
 piano
-pianoforte
-pianofortes
 pianos
 piazza
 piazzas
-piazze
 pica
 picante
 picaresque
@@ -40420,15 +40362,9 @@ piccalilli
 piccolo
 piccolos
 pick
-pickaback
-pickabacked
-pickabacking
-pickabacks
 pickax
 pickaxe
-pickaxed
 pickaxes
-pickaxing
 picked
 picker
 pickerel
@@ -43616,10 +43552,6 @@ puzzler
 puzzlers
 puzzles
 puzzling
-pwn
-pwned
-pwning
-pwns
 pygmies
 pygmy
 pylon
@@ -44420,7 +44352,6 @@ razz
 razzed
 razzes
 razzing
-re
 reach
 reachable
 reached
@@ -47456,7 +47387,6 @@ royally
 royals
 royalties
 royalty
-rs
 rub
 rubbed
 rubber
@@ -49484,7 +49414,6 @@ sexual
 sexuality
 sexually
 sexy
-sh
 shabbier
 shabbiest
 shabbily
@@ -50414,7 +50343,6 @@ silversmith
 silversmiths
 silverware
 silvery
-sim
 simian
 simians
 similar
@@ -56589,7 +56517,6 @@ thymuses
 thyroid
 thyroids
 thyself
-ti
 tiara
 tiaras
 tibia
@@ -56932,12 +56859,9 @@ toilette
 toiling
 toils
 toilsome
-toke
-toked
 token
 tokenism
 tokens
-tokes
 toking
 told
 tolerable
@@ -58113,7 +58037,6 @@ tryst
 trysted
 trysting
 trysts
-ts
 tsar
 tsarina
 tsarinas
@@ -60319,8 +60242,6 @@ vector
 vectored
 vectoring
 vectors
-veep
-veeps
 veer
 veered
 veering
@@ -62936,12 +62857,6 @@ yuckiest
 yucking
 yucks
 yucky
-yuk
-yukked
-yukking
-yuks
-yule
-yuletide
 yum
 yummier
 yummiest
@@ -62970,8 +62885,6 @@ zebra
 zebras
 zebu
 zebus
-zed
-zeds
 zenith
 zeniths
 zephyr
