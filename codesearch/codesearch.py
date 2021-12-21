@@ -1,3 +1,4 @@
+import argparse
 import contextlib
 import json
 import os
@@ -5,10 +6,17 @@ from collections import defaultdict
 from typing import Dict, List, Optional, Set
 
 
-def make_index(*, directory: str, index_file: str) -> None:
+def main_make_index(directory: str, *, index_file: str) -> None:
     indexer = Indexer(index_file)
     indexer.make_index(directory)
     indexer.save()
+
+
+def main_search(query: str, *, index_file: str) -> None:
+    searcher = Searcher(index_file)
+    paths = searcher.search(query)
+    for path in paths:
+        print(path)
 
 
 class Indexer:
@@ -48,13 +56,6 @@ class Indexer:
             return True
 
         return False
-
-
-def search(query: str, *, directory: str, index_file: str) -> None:
-    searcher = Searcher(index_file)
-    paths = searcher.search(query)
-    for path in paths:
-        print(path)
 
 
 class Searcher:
@@ -107,8 +108,23 @@ def list_paths_in_directory(directory: str) -> List[str]:
 
 
 if __name__ == "__main__":
-    directory = "/home/iafisher/dev/misc"
-    index_file = "misc.idx"
+    parser = argparse.ArgumentParser(description="Search indexed source code.")
+    subparsers = parser.add_subparsers(help="Subcommands")
 
-    # make_index(directory=directory, index_file=index_file)
-    search("raise", directory=directory, index_file=index_file)
+    parser_index = subparsers.add_parser("index", help="Create a search index")
+    parser_index.add_argument("directory")
+    parser_index.add_argument("--out", required=True)
+    parser_index.set_defaults(subcommand="index")
+
+    parser_search = subparsers.add_parser("search", help="Search for something")
+    parser_search.add_argument("query")
+    parser_search.add_argument("--index", required=True)
+    parser_search.set_defaults(subcommand="search")
+
+    args = parser.parse_args()
+    if args.subcommand == "index":
+        main_make_index(args.directory, index_file=args.out)
+    elif args.subcommand == "search":
+        main_search(args.query, index_file=args.index)
+    else:
+        raise Exception(f"unknown subcommand: {args.subcommand}")

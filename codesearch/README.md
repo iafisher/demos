@@ -2,7 +2,6 @@ A simple indexed search engine for code. Inspired by ["Regular Expression Matchi
 
 TODO:
 
-- Better command-line interface
 - Don't assume UTF-8
 - More efficient index file format
 - Trigrams instead of variable-length words
