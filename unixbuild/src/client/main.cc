@@ -36,6 +36,18 @@ int main(int argc, char* argv[]) {
   try {
     CommandLine cmdline = parse_args(argc, argv);
     BuildFile build_file = parse_build_file(cmdline.build_path);
+
+    pid_t pid;
+    if ((pid = fork()) < 0) {
+      throw unixbuild::ExitException(std::string("could not fork"), 1);
+    } else if (pid != 0) {
+      // parent
+      std::cout << "Spawned daemon process with PID " << pid << ". Now exiting."
+                << std::endl;
+    } else {
+      // child
+      execl("out/unixbuild-server", "unixbuild-server", NULL);
+    }
   } catch (unixbuild::ExitException& e) {
     std::cerr << "error: " << e.message_ << std::endl;
     return e.returncode_;

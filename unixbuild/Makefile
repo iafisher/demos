@@ -9,7 +9,7 @@ MAKEFLAGS += --no-builtin-rules
 CC := g++
 CFLAGS := -Wall -Wextra -Werror -Iinclude -std=c++17
 
-build: out/unixbuild
+build: out/unixbuild out/unixbuild-server
 .PHONY: build
 
 test: out/test
@@ -22,7 +22,10 @@ clean:
 # This is a quick-and-dirty makefile and deps lists are not exhaustive, so you
 # may need to sometimes run `make clean` to rebuild correctly.
 
-out/unixbuild: src/*.cc
+out/unixbuild: src/client/*.cc src/common/*.cc
+	$(CC) -o $@ $(CFLAGS) $^
+
+out/unixbuild-server: src/server/*.cc src/common/*.cc
 	$(CC) -o $@ $(CFLAGS) $^
 
 out/test: test/*.cc src/common.cc

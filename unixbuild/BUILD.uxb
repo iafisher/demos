@@ -1,0 +1,2 @@
+hello: hello.c include/mylib.h mylib.o
+mylib.o: mylib.c
