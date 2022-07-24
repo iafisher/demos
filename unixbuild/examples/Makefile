@@ -9,14 +9,19 @@ MAKEFLAGS += --no-builtin-rules
 CC := gcc
 CFLAGS := -Wall -Wextra -Werror
 
-all: fork threads
+binaries = fork threads signals
+
+all: $(binaries)
 
 fork: fork.c
 	$(CC) $(CFLAGS) -o $@ $<
 
+signals: signals.c
+	$(CC) $(CFLAGS) -o $@ $<
+
 threads: threads.c
-	$(CC) $(CFLAGS) -pthread -fsanitize=signed-integer-overflow -o $@ $<
+	$(CC) $(CFLAGS) -pthread -o $@ $<
 
 clean:
-	rm -f fork threads
+	rm -f $(binaries)
 .PHONY: clean
