@@ -9,7 +9,7 @@ MAKEFLAGS += --no-builtin-rules
 CC := gcc
 CFLAGS := -Wall -Wextra -Werror
 
-binaries = fork threads signals
+binaries = fork threads signals winch
 
 all: $(binaries)
 
@@ -21,6 +21,9 @@ signals: signals.c
 
 threads: threads.c
 	$(CC) $(CFLAGS) -pthread -o $@ $<
+
+winch: winch.c
+	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
 	rm -f $(binaries)
