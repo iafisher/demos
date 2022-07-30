@@ -9,12 +9,18 @@ MAKEFLAGS += --no-builtin-rules
 CC := gcc
 CFLAGS := -Wall -Wextra -Werror
 
-binaries = fork threads signals winch
+binaries = fork hello_client hello_server threads signals winch
 
 all: $(binaries)
 
 fork: fork.c
 	$(CC) $(CFLAGS) -o $@ $<
+
+hello_client: hello_client.c
+	$(CC) $(CFLAGS) -o $@ $<
+
+hello_server: hello_server.c
+	$(CC) $(CFLAGS) -pthread -o $@ $<
 
 signals: signals.c
 	$(CC) $(CFLAGS) -o $@ $<

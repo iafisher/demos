@@ -1,4 +1,6 @@
 /fork
+/hello_client
+/hello_server
 /signals
 /threads
 /winch
